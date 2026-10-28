@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Portfolio | Website Design & Creative Projects | JK Digital</title>
+
+    <meta name="description" content="Explore JK Digital's portfolio of website development, graphic design, branding, and creative digital projects.">
+
+    <meta name="author" content="JK Digital">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="assets/images/jk-favicon.png">
+
+    <!-- Social Media Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Portfolio | JK Digital">
+    <meta property="og:description" content="Explore our creative work, digital projects, and solutions built to make brands stand out.">
+    <meta property="og:image" content="assets/images/jk-digital-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Website Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body id="top">
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>Creative thinking. Smart technology. Better digital experiences.</p>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="index.html" class="brand" aria-label="JK Digital homepage">
+                <img
+                    src="assets/images/jk-digital-logo.png"
+                    alt="JK Digital — Design, Develop, Grow"
+                    class="brand-logo"
+                >
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navLinks"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <a href="contact.html" class="button button-gold nav-cta">
+                    Let's Talk <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Portfolio Hero -->
+        <section class="portfolio-hero">
+            <div class="container">
+
+                <div class="portfolio-hero-content">
+                    <span class="section-label">OUR PORTFOLIO</span>
+
+                    <h1>
+                        Ideas brought<br>
+                        <span>to life.</span>
+                    </h1>
+
+                    <p>
+                        Every project begins with an idea. Explore our
+                        creative direction across web design, graphic
+                        design, software development, and digital solutions.
+                    </p>
+
+                    <div class="portfolio-hero-actions">
+                        <a href="#projects" class="button button-dark">
+                            Explore Our Work ↓
+                        </a>
+
+                        <a href="contact.html" class="text-link">
+                            Start Your Project ↗
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-hero-note">
+                    <span class="portfolio-note-icon">✳</span>
+
+                    <div>
+                        <strong>Creativity meets technology.</strong>
+                        <p>Designed with purpose. Built around real needs.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Portfolio Introduction -->
+        <section class="portfolio-intro section-padding">
+            <div class="container portfolio-intro-grid">
+
+                <div>
+                    <span class="section-label">SELECTED WORK</span>
+
+                    <h2 class="section-heading">
+                        Thoughtful ideas.<br>
+                        <span class="gold-text">Purposeful execution.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Our work reflects our approach to digital problem-solving:
+                    understanding the goal, choosing the right tools, and
+                    creating a solution that communicates clearly and serves
+                    a practical purpose.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="portfolio-gallery section-padding" id="projects">
+
+            <div class="container">
+
+                <div class="portfolio-gallery-heading">
+                    <div>
+                        <span class="section-label">EXPLORE OUR PROJECTS</span>
+                        <h2 class="section-heading">A closer look at our work.</h2>
+                    </div>
+
+                    <p>
+                        Browse projects by category to discover
+                        the types of solutions we can create.
+                    </p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filters" role="group" aria-label="Filter projects">
+
+                    <button class="portfolio-filter active" type="button" data-filter="all" aria-pressed="true">
+                        All Projects
+                    </button>
+
+                    <button class="portfolio-filter" type="button" data-filter="web" aria-pressed="false">
+                        Web Design
+                    </button>
+
+                    <button class="portfolio-filter" type="button" data-filter="graphic" aria-pressed="false">
+                        Graphic Design
+                    </button>
+
+                    <button class="portfolio-filter" type="button" data-filter="software" aria-pressed="false">
+                        Software
+                    </button>
+
+                    <button class="portfolio-filter" type="button" data-filter="creative" aria-pressed="false">
+                        Creative
+                    </button>
+
+                </div>
+
+                <!-- Project Cards -->
+                <div class="portfolio-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card project-featured" data-category="web">
+
+                        <a href="contact.html?service=web-development" class="project-image">
+                            <img
+                                src="assets/images/website-mockup.jpg"
+                                alt="Website displayed on a laptop and smartphone"
+                                loading="lazy"
+                            >
+
+                            <span class="project-image-arrow" aria-hidden="true">↗</span>
+                        </a>
+
+                        <div class="project-card-content">
+
+                            <div class="project-meta">
+                                <span>WEB DESIGN</span>
+                                <span>01</span>
+                            </div>
+
+                            <h3>Modern Digital Experiences</h3>
+
+                            <p>
+                                Responsive website concepts designed to
+                                present brands professionally across
+                                desktop and mobile devices.
+                            </p>
+
+                            <a href="contact.html?service=web-development" class="project-link">
+                                Discuss a Similar Project ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="graphic">
+
+                        <a href="contact.html?service=graphic-design" class="project-image">
+                            <img
+                                src="assets/images/graphic-design.jpg"
+                                alt="Graphic design artwork"
+                                loading="lazy"
+                            >
+
+                            <span class="project-image-arrow" aria-hidden="true">↗</span>
+                        </a>
+
+                        <div class="project-card-content">
+
+                            <div class="project-meta">
+                                <span>GRAPHIC DESIGN</span>
+                                <span>02</span>
+                            </div>
+
+                            <h3>Creative Visual Communication</h3>
+
+                            <p>
+                                Bold visual concepts that demonstrate
+                                how typography, layout, and imagery
+                                can communicate a message.
+                            </p>
+
+                            <a href="contact.html?service=graphic-design" class="project-link">
+                                Discuss a Design Project ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="software">
+
+                        <a href="contact.html?service=software-development" class="project-image">
+                            <img
+                                src="assets/images/librarian-dashboard.jpg"
+                                alt="Software dashboard interface"
+                                loading="lazy"
+                            >
+
+                            <span class="project-image-arrow" aria-hidden="true">↗</span>
+                        </a>
+
+                        <div class="project-card-content">
+
+                            <div class="project-meta">
+                                <span>SOFTWARE SOLUTIONS</span>
+                                <span>03</span>
+                            </div>
+
+                            <h3>Management Dashboard Concepts</h3>
+
+                            <p>
+                                Administrative interface concepts
+                                illustrating organized information
+                                and structured digital workflows.
+                            </p>
+
+                            <a href="contact.html?service=software-development" class="project-link">
+                                Discuss a Software Project ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="creative">
+
+                        <a href="contact.html?service=it-support" class="project-image">
+                            <img
+                                src="assets/images/it-professional.jpg"
+                                alt="IT professional working at a computer"
+                                loading="lazy"
+                            >
+
+                            <span class="project-image-arrow" aria-hidden="true">↗</span>
+                        </a>
+
+                        <div class="project-card-content">
+
+                            <div class="project-meta">
+                                <span>DIGITAL SOLUTIONS</span>
+                                <span>04</span>
+                            </div>
+
+                            <h3>Technology for Better Workflows</h3>
+
+                            <p>
+                                Digital concepts that communicate
+                                reliability, practical technology,
+                                and a focus on solving real problems.
+                            </p>
+
+                            <a href="contact.html?service=it-support" class="project-link">
+                                Discuss Your Requirements ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card project-brand-card" data-category="graphic">
+
+                        <div class="brand-showcase">
+                            <span class="brand-showcase-label">BRAND IDENTITY</span>
+
+                            <div class="brand-monogram">JK</div>
+
+                            <strong>JK DIGITAL</strong>
+
+                            <span class="brand-showcase-tagline">
+                                DESIGN. DEVELOP. GROW.
+                            </span>
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <div class="project-meta">
+                                <span>BRANDING</span>
+                                <span>05</span>
+                            </div>
+
+                            <h3>Our Brand Identity</h3>
+
+                            <p>
+                                Our own black, white, and gold identity
+                                reflects our commitment to creative
+                                design and practical technology.
+                            </p>
+
+                            <a href="contact.html?service=graphic-design" class="project-link">
+                                Build Your Brand ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card project-idea-card" data-category="web">
+
+                        <div class="idea-showcase">
+                            <span class="idea-top-label">THE NEXT BIG IDEA</span>
+
+                            <div class="idea-graphic">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <h3>Your Project<br>Could Be Here.</h3>
+
+                            <p>
+                                Let's collaborate on something
+                                meaningful and useful.
+                            </p>
+
+                            <a href="contact.html" class="button button-gold">
+                                Start a Project ↗
+                            </a>
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <div class="project-meta">
+                                <span>YOUR NEXT PROJECT</span>
+                                <span>06</span>
+                            </div>
+
+                            <h3>Let's Create Something Together</h3>
+
+                            <p>
+                                Have an idea for a website, brand,
+                                or software solution? Let's explore it.
+                            </p>
+
+                            <a href="contact.html" class="project-link">
+                                Tell Us Your Idea ↗
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="portfolio-disclaimer">
+                    Project images and concept presentations are illustrative
+                    where applicable. We will replace these examples with
+                    verified client work and completed projects as our
+                    portfolio grows.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Our Approach -->
+        <section class="portfolio-approach section-padding">
+
+            <div class="container portfolio-approach-grid">
+
+                <div class="approach-visual">
+                    <div class="approach-visual-inner">
+                        <span class="approach-small-label">JK DIGITAL APPROACH</span>
+
+                        <div class="approach-big-mark">JK<span>.</span></div>
+
+                        <p>Creative thinking.<br>Purposeful technology.</p>
+
+                        <div class="approach-decoration"></div>
+                    </div>
+                </div>
+
+                <div class="approach-content">
+
+                    <span class="section-label">HOW WE THINK</span>
+
+                    <h2 class="section-heading">
+                        Good work starts<br>
+                        <span class="gold-text">with understanding.</span>
+                    </h2>
+
+                    <p>
+                        We don't believe in creating digital products
+                        just for appearance. We aim to understand the
+                        challenge, choose an appropriate solution,
+                        and build something that helps move the idea forward.
+                    </p>
+
+                    <div class="approach-points">
+
+                        <div>
+                            <span>01</span>
+                            <div>
+                                <h3>Understand the need</h3>
+                                <p>Learn about your goals and audience.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            <div>
+                                <h3>Design with purpose</h3>
+                                <p>Keep usability, clarity, and consistency in focus.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            <div>
+                                <h3>Build for the objective</h3>
+                                <p>Develop the agreed solution and review its quality.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="about.html" class="button button-dark">
+                        Learn About JK Digital ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Final CTA -->
+        <section class="portfolio-cta">
+
+            <div class="container portfolio-cta-inner">
+
+                <div>
+                    <span class="section-label">LET'S WORK TOGETHER</span>
+
+                    <h2>
+                        Your idea deserves<br>
+                        <span>a great execution.</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you want to create and let's
+                        discuss how we can help bring your idea to life.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="button button-gold button-large">
+                    Start Your Project ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html">
+                    <img
+                        src="assets/images/jk-digital-logo.png"
+                        alt="JK Digital"
+                        class="footer-logo"
+                        loading="lazy"
+                    >
+                </a>
+
+                <p>
+                    Creative design and practical technology,
+                    helping ideas move forward.
+                </p>
+
+                <span class="footer-tagline">DESIGN. DEVELOP. GROW.</span>
+            </div>
+
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <a href="services.html#web-development">Web Development</a>
+                <a href="services.html#graphic-design">Graphic Design</a>
+                <a href="services.html#software-development">Software Solutions</a>
+                <a href="services.html#it-support">IT Support</a>
+                <a href="services.html#photography">Photography</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Let's Connect</h3>
+                <p>Have a project or question?</p>
+                <a href="contact.html" class="footer-contact-link">
+                    Get in Touch ↗
+                </a>
+                <p class="footer-location">
+                    Uganda · Working towards your digital goals
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; <span id="currentYear"></span> JK Digital. All rights reserved.</p>
+                <a href="#top">Back to top ↑</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+
+</body>
+</html>
